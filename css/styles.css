@@ -1,0 +1,86 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.table-content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+.container {
+    padding: 50px;
+    width: 50vw;
+    display: flex;
+    border: 2px solid rgb(204, 197, 248);
+}
+
+.block1,
+.block2,
+.block3 {
+    height: 50px;
+    width: 70px;
+}
+
+.block1 {
+    background-color: rgb(247, 172, 172);
+    margin-right: 20px;
+}
+
+.block2 {
+    background-color: rgb(97, 197, 237);
+    margin-right: 20px;
+}
+
+.block3 {
+    background-color: rgb(172, 239, 172);
+    margin-right: 50px;
+}
+
+.box {
+    border: 5px solid blue;
+    width: 200px;
+    height: 150px;
+    margin: 2%;
+    padding: 2%;
+}
+
+.parent-box {
+    width: 50%;
+}
+
+.main-box {
+    padding: 5px;
+}
+
+.main-box {
+    background-color: antiquewhite;
+}
+.img-container {
+    height: 70px;
+    width: auto;
+    padding: 10px;
+    background-image:url('/assets/images/newpfp.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: bottom right;
+}
+
+.content {
+    margin-right: 70px;
+    max-height: 70px;
+    overflow-y:hidden;
+}
+
+.box2 {
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    background-color: antiquewhite;
+}

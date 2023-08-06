@@ -1,0 +1,21 @@
+.parent {
+    width: 400px;
+    height: 400px;
+    align-content: flex-end ;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.parent div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.parent div:nth-child(2n) {
+    height: 50px;
+}

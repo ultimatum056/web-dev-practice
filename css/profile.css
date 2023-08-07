@@ -4,16 +4,19 @@
     align-content: flex-end ;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid purple;
+    border: 2px dashed purple;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 0px;
 }
 
 .parent div {
-    width: 100px;
+    width: 98px;
     height: 100px;
+    padding: 0px;
     background-color: aqua;
+    border: 1px solid white;
 }
 
 .parent div:nth-child(2n) {

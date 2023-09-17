@@ -22,3 +22,23 @@
 .parent div:nth-child(2n) {
     height: 50px;
 }
+
+.p2 {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    background-color: aqua;
+    border: 1px solid white;
+    display: inline-block;
+    position: static ;
+}
+.abs {
+    position: sticky;
+    height: 20px;
+    width: 20px;
+    bottom: 20px;
+    top: 20px;
+    right: 20px;
+    background-color: aqua;
+    border: 1px solid white;
+}

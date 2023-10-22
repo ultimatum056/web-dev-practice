@@ -73,3 +73,59 @@ inc1(obj)
 for (let key in circle3) {
     console.log('--key', key, typeof key, typeof circle3[key])
 }
+
+// to know if object has certain property
+
+if ('radius' in circle3)
+    console.log('test for circle having radius property passed')
+
+circle3.location = {
+    x: 1,
+    y: 1,
+};
+
+
+if('x' in circle3.location)
+    console.log('-circle has location x')
+
+
+// getter and  setter function
+
+function Stopwatch() {
+    let startTime, endTime, isRunning, totalRunTime
+
+    this.start = function() {
+        if(isRunning) {
+            throw new Error('Stop watch is already runnig')
+        }
+
+        startTime = new Date()
+        isRunning = true
+        console.log('Stop watched is now running')
+    }
+
+    this.stop = function() {
+        if(!isRunning) {
+            throw new Error('Stop watch not running')
+        }
+
+        endTime = new Date()
+        // calc run time
+        totalRunTime = (endTime - startTime) / 1000
+        console.log(totalRunTime + ' seconds')
+        isRunning = false
+        console.log('Stop watched has now stopped')
+    }
+
+    Object.defineProperty(this, 'totalRunTime', {
+        get: function () {
+            return totalRunTime
+        }
+    })
+
+
+}
+
+const stopwatch = new Stopwatch()
+stopwatch.start()
+stopwatch.stop()
